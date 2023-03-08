@@ -21,10 +21,10 @@ public class FanoutExchangeConfig {
     @Autowired
     private AmqpAdmin amqpAdmin;
 
-    @Value("${fanout-queue-1}")
+    @Value("${rabbitmq.fanout.queue1}")
     private String FANOUT_QUEUE_1;
 
-    @Value("${fanout-queue-2}")
+    @Value("${rabbitmq.fanout.queue2}")
     private String FANOUT_QUEUE_2;
 
     @Value("${rabbitmq.fanout.exchange}")
